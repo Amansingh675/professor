@@ -5,7 +5,10 @@ import { ACTION_HEADER } from "next/dist/client/components/app-router-headers"
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 
+
 const inter=Inter({subsets:["latin"]});
+
+
 
 export const metadata = {
   title: "Professor - AI Career Coach",
@@ -31,10 +34,10 @@ export default function RootLayout({ children }) {
           >
             {/* header */}
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen ">{children}</main>
             {/* footer */}
-            <footer className="bg-muted/50 py-12">
-              <div className="container mx-auto px-4 text-center text-gray-200">
+            <footer className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
+              <div className="container mx-auto px-4 text-center text-gray-200 w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
                 <p>Made With ❤️ by Amansingh675</p>
               </div>
             </footer>

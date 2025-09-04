@@ -14,13 +14,18 @@ import Link from "next/link";
 export default function Home() {
   return( 
   <div>
-    <div className="grid-background"></div>
+    <div className="grid-background">
+  <video autoPlay muted loop playsInline className="background-video">
+    <source src="/background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
     <HeroSection />
 
 
  
-     <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-l via-blue-950">
        <div className="container mx-auto px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Powerful Features for Your Career Groth</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">{features.map((feature,index)=>{
@@ -42,7 +47,7 @@ export default function Home() {
       </section> 
 
       {/* Stats Section */}
-      <section className="w-full py-12 md:py-24 bg-muted/50">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
             <div className="flex flex-col items-center justify-center space-y-2">
@@ -67,7 +72,7 @@ export default function Home() {
 
 
       {/* How It Works Section */}
-      <section className="w-full py-12 md:py-24 bg-background">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950 ">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">How It Works</h2>
@@ -94,7 +99,7 @@ export default function Home() {
       </section>
 
 
-      <section className="w-full py-12 md:py-24 bg-muted/50">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Users Say
@@ -145,7 +150,7 @@ export default function Home() {
 
 
       {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">
@@ -172,13 +177,13 @@ export default function Home() {
       </section>
 
        {/* CTA Section */}
-      <section className="w-full">
-        <div className="mx-auto py-24 bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600 rounded-lg">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-l via-blue-950">
+        <div className="mx-auto py-24 ">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold  sm:text-4xl md:text-5xl">
               Ready to Accelerate Your Career?
             </h2>
-            <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
+            <p className="mx-auto max-w-[600px]  md:text-xl">
               Join thousands of professionals who are advancing their careers
               with AI-powered guidance.
             </p>

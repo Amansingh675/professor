@@ -29,7 +29,7 @@ const HeroSection =() => {
  },[]);
 
     return (
-        <section className="w-full pt-36 md:pt-48 pb-10">
+        <section className="w-full pt-36 md:pt-48 pb-10 bg-gradient-to-l via-blue-950">
             <div className="space-y-6 text-center">
                 <div className="space-y-6 mx-auto">
                     <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-gray-400 via-gray-200 to-gray-600 pb-2 pr-2">Yor AI Career Coach for
@@ -52,17 +52,13 @@ const HeroSection =() => {
                 </div>
 
                 <div className="hero-image-wrapper mt-5 md:mt-0 ">
-                    <div ref={imageRef} className="hero-image">
-                        <Image 
-                        src={"/banner.jpeg"}
-                        width={1280}
-                        height={720}
-                        alt="Banner Professor"
-                        className="rounded-lg shadow-2xl border mx-auto"
-                        priority
-                        />
-                    </div>
+                    <div ref={imageRef} className="hero-image relative w-[1280px] h-[720px] overflow-hidden rounded-lg shadow-2xl border mx-auto">
+                     <video autoPlay loop muted playsInline className="absolute top-0 left-0 w-full h-full object-cover" >
+                        <source src="/Professor.mp4" type="video/mp4"  />
+                          Your browser does not support the video tag.
+                     </video>
                 </div>
+            </div>
             </div>
         </section>
     )
