@@ -18,7 +18,7 @@ model User {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 
-// Profile fields
+  // Profile fields
   bio           String?
   experience    Int?      // Years of experience
   
