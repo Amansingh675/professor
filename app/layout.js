@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <main className="min-h-screen">{children}</main>
             {/* footer */}
             <footer className="bg-muted/20 w-full py-12 md:py-24 lg:py-5 bg-gradient-to-l via-blue-950">
-              <div  className="w-full py-12 md:py-24 lg:py-10 bg-gradient-to-l via-blue-950 container ms-auto px-4 text-center text-gray-200">
+              <div  className="w-full py-12 md:py-24 lg:py-10 bg-gradient-to-l via-blue-950 container ms-auto px-4 text-center text-gray-200 ">
                 <p>Made with 💗 by Aman Singh</p>
               </div>
             </footer>
